@@ -3,7 +3,7 @@ $(document).ready(function() {
     navigator.geolocation.getCurrentPosition(function(position) {
       var lat = position.coords.latitude;
       var long = position.coords.longitude;
-      var appKey = "55dc0f2afe32197ade34ca481eeeba67";
+      var appKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
       $.getJSON("http://api.openweathermap.org/data/2.5/weather", encodeURI("lat="+lat+"&lon="+long+"&APPID="+appKey), function(data) {
         var city = data.name + ", " + data.sys.country;
         var desc = data.weather[0].description;
