@@ -1,0 +1,9 @@
+body {
+  text-shadow: 0 0 2px white;
+}
+#weather-img {
+  z-index: -1;
+  opacity: .5;
+  position: absolute;
+  width: 100%;
+}
